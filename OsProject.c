@@ -5,11 +5,16 @@ void main()
   char p[10][5],temp[5];
   int i,j,pt[10],wt[10],totwt=0,pr[10],temp1,n;
   float avgwt;
+ printf("Please enter the number of processes to create:");
  scanf("%d",&n);
   for(i=0;i<n;i++){
+        printf("Enter the NAME of process >> %d <<:",i+1);
         scanf("%s",&p[i]);
+        printf("Enter the TIME for process >> %d <<:",i+1);
         scanf("%d",&pt[i]);
+        printf("Enter the PRIORITY for process >> %d <<:",i+1);
         scanf("%d",&pr[i]);
+
   }
  for(i=0;i<n-1;i++){
         for(j=i+1;j<n;j++){
